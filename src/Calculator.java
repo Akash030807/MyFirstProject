@@ -4,16 +4,17 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         int x,y,z=0;
         System.out.println("Enter any two numbers");
+        try{
         x = sc.nextInt();
         y = sc.nextInt();
-        try{
+
             z = x/y;
             System.out.println("Exception not Occurs");
         }
-        catch(ArithmeticException e){
-            System.out.println(e.getMessage());
-
-        }
+//        catch(ArithmeticException e){
+//            System.out.println(e.getMessage());
+//
+//        }
         catch(Exception e) {
             System.out.println(e.getMessage());
         }
