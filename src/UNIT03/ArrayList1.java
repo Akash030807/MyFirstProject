@@ -10,5 +10,4 @@ public class ArrayList1 {
             System.out.println(i);
         }
     }
-
 }

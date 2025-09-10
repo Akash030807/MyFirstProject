@@ -14,6 +14,5 @@ public class ArrayList2 {
         Collections.sort(products);
         System.out.println(products);
         System.out.println(products.get(3));
-
     }
 }

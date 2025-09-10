@@ -13,15 +13,21 @@ public class ArrayList3 {
             products.add(sc.next());
         }
         Iterator itr = products.iterator();
-        while(itr.hasNext()) {//tell index me element hai ya nhi
-            System.out.println(itr.next());// next return current index and point next
+        while(itr.hasNext()) {//tell next index me element hai ya nhi
+            System.out.println(itr.next());// itr.next() → returns the current element and then moves the pointer to the next one.
         }
-        products.addLast("Lichi");
         products.add(3,"papaya");
+        products.addLast("Lichi");
         Collections.sort(products);
         System.out.println(products);
         System.out.println(products.getLast());
         System.out.println(products.getFirst());
         System.out.println(products.get(2));
+        //Iterator
+//        hasNext() → checks if more elements are left.
+//
+//        next() → fetches current element and moves forward.
+//
+//        remove() → deletes the last element returned by next() safely.
     }
 }
